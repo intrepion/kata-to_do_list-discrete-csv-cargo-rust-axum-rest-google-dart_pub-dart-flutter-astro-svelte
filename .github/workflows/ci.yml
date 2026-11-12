@@ -49,6 +49,8 @@ jobs:
           persist-credentials: false
       - uses: subosito/flutter-action@v2.23.0
         with:
+          # Matches client/.metadata revision 058e0af (Flutter 3.44.8).
+          flutter-version: '3.44.8'
           channel: stable
           cache: false
       - run: flutter pub get
