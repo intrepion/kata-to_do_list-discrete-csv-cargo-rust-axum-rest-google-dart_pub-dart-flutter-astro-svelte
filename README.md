@@ -4,7 +4,7 @@ To Do List kata, discrete example, CSV file storage, Rust + Axum REST server, Go
 
 ## Continuous integration
 
-CI checks the current Rust scaffold, builds the Astro landing page, and analyzes/tests/builds the Flutter web scaffold. The widget test verifies the existing Hello World screen; it does not claim To Do List features are implemented. Native mobile/desktop packaging is not covered.
+CI checks the current Rust scaffold, builds the Astro landing page, and analyzes/tests/builds the Flutter web scaffold. The widget test verifies the existing Hello World screen; it does not claim To Do List features are implemented. Native mobile/desktop packaging is not covered. Flutter is pinned to 3.44.8, matching the committed client/.metadata SDK revision; adopting a newer SDK is a separate migration.
 
 The workflows are read-only and do not deploy. Action dependencies are recorded in
 `.github/workflows/actions.lock`. After changing action references, run
